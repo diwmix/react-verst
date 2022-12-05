@@ -1,0 +1,72 @@
+.LeftMenu {
+    width: 240px;
+    height: 100%;
+    transform: translateX(-10000000px);
+    position: absolute;
+}
+
+.LeftMenu.active{
+    transform: translateX(0);
+    width: 240px;
+    height: 100%;   
+    position: absolute;
+}
+
+.LeftMenu button {
+    background-color: transparent;
+    color: white;
+}
+
+.LeftMenu-title {
+    display: flex;
+    height: 56px;
+    width: 100%;
+    align-items: center;
+    padding: 0 0 0 16px;
+}
+
+.LeftMenu-List {
+    width: 216px;
+}
+
+.LeftMenu-Button div:not(.LeftMenu-FirstSector, .LeftMenu-SecondSector, .LeftMenu-ThirdSector) {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.LeftMenu-Button {
+    padding: 12px;
+
+}
+
+.LeftMenu-MainBtn div, .LeftMenu-ShortsBtn div, .LeftMenu-SubscribeBtn div {
+    color: white;
+    height: 24px;
+    width: 24px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LeftMenu-SecondSector {
+    border-top: 1px solid #fff;
+    margin-top: 15px;
+    padding-top: 15px;
+
+    border-color: #272727;
+}
+
+.LeftMenu-MainBtn, .LeftMenu-ShortsBtn, .LeftMenu-SubscribeBtn {
+    padding: 0 12px 0 12px;
+}
+
+.LeftMenu-MainBtn button, .LeftMenu-ShortsBtn button, .LeftMenu-SubscribeBtn button {
+    font-size: 14px;
+}
+
+.Icon-Div {
+    width: 24px;
+    height: 24px;
+}

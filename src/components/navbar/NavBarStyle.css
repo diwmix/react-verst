@@ -1,0 +1,225 @@
+.NavBar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 16px;
+    justify-content: space-between;
+    position: fixed;
+    position: relative;
+}
+
+.HamburgerContainer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30000px;
+    padding: 8px;
+}
+
+.Hamburger {
+    width: 18px;
+    height: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.HamburgerContainer:hover {
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.Hamburger div {
+    width: 18px;
+    height: 1px;
+    background: #fff;
+}
+
+.NavMenu {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    width: 169px;
+    
+}
+
+.icon {
+    height: 56px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.NavSearch {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+}
+
+.SearchInput input {
+    height: 24px;
+    width: 540px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+.SearchInput input::placeholder {
+    font-size: 17px;
+    color: #A0A0A0;
+}
+.Search {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    width: 610px;
+    justify-content: end;
+}
+.NavSearch > button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10000px;
+    background-color: #181818;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.Microphone {
+    display: flex;
+    text-align: center;
+}
+
+.SearchInput {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 540px;
+    padding: 0 4px 0 16px;
+    border-radius: 10000px 0 0 10000px;
+    border: 1px solid rgba(62, 62, 62, 0.7);
+    background-color: #121212;
+}
+
+input::placeholder:focus, input::placeholder:active {
+    outline: none;
+}
+
+
+.NavButton {
+    width: 156px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.NavButton-Notification-Div {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100000px;
+}
+.NavButton-Profile-Div {
+    width: 50px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.NavButton-Upload-Div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10000px;
+}
+
+.NavButton-Notification {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+.NavButton-Profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 1000px;
+    background: url('../../source/irynka.jpg');
+    background-size: 35px; 
+    background-position: -3px;
+    background-repeat: no-repeat;   
+}
+.NavButton-Upload {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.NavSearch-Keyboard {
+    width: 27px;
+    height: 24px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.NavSearch-Clear {
+    width: 27px;
+    height: 24px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 10000px;
+    display: none;
+}
+
+.NavSearch-Clear:hover {
+    background-color: #282828;
+}
+
+
+
+.SearchButton {
+    height: 40px;
+    width: 64px;
+    border-radius: 0 1000px 1000px 0;
+    border: none;
+    background-color: #282828;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavButton-Upload-Div:hover {
+    background-color: #282828;
+}
+.NavButton-Notification-Div:hover {
+    background-color: #282828;
+}
+
+.SearchInput-Button {
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

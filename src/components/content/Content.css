@@ -1,0 +1,507 @@
+
+
+.Content {
+    display: flex;
+}
+
+.LeftContent {
+    width: 66.7%;
+    height: 4000px;
+    padding: 24px 24px 0 0;
+    margin: 0 0 0 24px;
+}
+
+.LeftContent-Video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000;
+    max-height: 480px;
+}
+.LeftContent-Video video {
+    width: 100%;
+}
+
+.RightContent {
+    width: 33.3%;
+    height: 696px;   
+    padding: 24px 24px 0 0;
+}
+.Playlist {
+    width: 100%;
+    
+}
+
+
+.Playlist-Sort {
+    width: 100%;
+    display: flex;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.Playlist-Sort:nth-child(0) {
+    background-color: white;
+    color: #282828;
+}
+
+.Playlist-Btn {
+    text-overflow: ellipsis;
+    max-width: 224px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Latest-Video-Btn, .All-Video-Btn, .Watched-Video-Btn {
+    height: 32px;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 8px 8px 8px 0;
+    font-size: 15px;
+    max-width: 224px;
+    background-color: #282828;
+    color: white; 
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.Latest-Video-Btn:focus, .All-Video-Btn:focus,  .Watched-Video-Btn:focus {
+    background-color: white;
+    color: #282828;
+}
+
+.Latest-Video-Btn:hover:not(:focus), .All-Video-Btn:hover:not(:focus), .Watched-Video-Btn:hover:not(:focus) {
+    background-color: #3F3F3F;
+    color: white;
+}
+
+.Playlist-Component {
+    width: 402px;
+    display: flex;
+    height: 94px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.Playlist-VideoPreview {
+    width: 168px;
+    height: 94px;
+    background: url('../../source/irynka.jpg');
+    background-size: 168px;
+    background-position: 0px;
+    border-radius: 7px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    margin-right: 8px;
+}
+
+.Playlist-VideoPreview span {
+    margin: 4px;
+    padding: 3px 4px;
+    font-size: 12px;
+    background-color: #000000CC;
+    color: white;
+    border-radius: 3px;
+    width: 38px;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Playlist-VideoInfo {
+    width: 226px;
+    height: 55px;
+}
+
+.Playlist-VideoInfo h2 {
+    color: white;
+    font-size: 14;
+    height: 20px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.Playlist-VideoInfo p {
+    color: #AAAAAA;
+    font-size: 12px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.LeftContent-VideoInfo h1 {
+    color: #F1F1F1;
+    font-size: 20px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.LeftContent-Action {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LeftContent-OwnerAction{
+    display: flex;
+    height: 43px;
+    align-items: flex-end;
+}
+
+.Owner-Nickname{
+    color: white;
+    font-size: 16px;
+    height: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.Owner-Subscribers{
+    color: #AAAAAA;
+    font-size: 12px;
+}
+
+.Owner-Buttons {
+    display: flex;
+}
+
+
+
+.OwnerIcon {
+    width: 40px;
+    height: 40px;
+    background: url('../../source/irynka.jpg');
+    background-size: 40px;
+    background-position: 0;
+    border-radius: 1000000px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.LeftContent-Sponsor-Button {
+    height: 36px;
+    color: #ffffff;
+    background-color: #FFFFFF1A;
+    border-radius: 18px;
+    width: 126px;
+    margin-right: 8px;
+    display: none;
+}
+
+.LeftContent-Subscribe-Button {
+    height: 36px;
+    color: black;
+    width: 118px;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 450;
+
+}
+
+.Owner-Nickname-Subscribers {
+    margin-right: 24px;
+}
+
+.Video-Buttons {
+    height: 43px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Like-Dislike-Button {
+    height: 36px;
+    background-color: #FFFFFF1A;
+    border-radius: 100000px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.Like-Dislike-Button .Dislike-Button .Like-Icon {
+    transform: scale(-1);
+}
+
+.Like-Button {
+    height: 36px;
+    background-color: transparent;
+    border-radius: 1000px 0 0 1000px;
+    padding: 4px 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: 450;
+    transition: 0.15s;
+}
+
+.Like-Button:hover {
+    background-color: #FFFFFF33;
+    cursor: pointer;
+}
+
+.Dislike-Button {
+    background-color: transparent;
+    height: 36px;
+    border-radius: 0 1000px 1000px 0;
+    padding: 4px 15px;
+    transition: 0.15s;
+}
+
+.Dislike-Button:hover {
+    background-color: #FFFFFF33;
+    cursor: pointer;
+}
+
+.Like-Icon, .Share-Icon {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+
+.Share-Button-Div {
+    height: 36px;
+    background-color: #FFFFFF1A;
+    border-radius: 100000px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.Share-Button {
+    padding: 4px 15px;
+    height: 36px;
+    border-radius: 1000px;
+    color: white;
+    font-size: 14px;
+    font-weight: 450;
+    background-color: transparent;
+    transition: 0.15s;
+}
+
+.Share-Button:hover {
+    background-color: #FFFFFF33;
+    cursor: pointer;
+}
+
+
+.Another-Button-Div {
+    height: 36px;
+    background-color: #FFFFFF1A;
+    border-radius: 100000px;
+    display: flex;
+}
+
+.Another-Button {
+    padding: 4px 12px;
+    height: 36px;
+    border-radius: 1000px;
+    color: white;
+    font-size: 14px;
+    font-weight: 450;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 450;
+    transition: 0.15s;
+}
+
+.Another-Button:hover {
+    background-color: #FFFFFF33;
+    cursor: pointer;
+}
+
+
+.Line-LikeDislike {
+    font-size: 28px;
+    font-weight: 100;
+    color: #3F3F3F;
+    cursor: default;
+    width: 1px;
+} 
+
+.LeftContent-VideoStats {
+    width: 100%;
+    height: 64px;
+    margin-top: 12px;
+    background-color: #FFFFFF1A;
+    border-radius: 12px;
+    padding: 14px;    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.LeftContent-VideoStats:hover {
+    background-color: #FFFFFF33;
+    cursor: pointer;
+}
+
+.Data-Viewed-VideoStats {
+    display: flex;
+}
+
+.Viewed-Stats {
+    font-size: 14px;
+    font-weight: 450;
+    color: white;
+    margin-right: 8px;
+}
+
+.Data-Stats {
+    font-size: 14px;
+    font-weight: 450;
+    color: white;
+}
+
+.More-VideoStats-Span {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    width: 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    font-weight: 500;
+}
+
+.More-VideoStats {
+    width: 20px;
+}
+
+.Commentary-Content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.Commentary-Content div {
+    display: flex;
+}
+
+.Commentary-Content div:hover {
+    cursor: pointer;
+}
+
+.Commentary-Count {
+    color: white;
+    font-size: 16px;
+    margin-right: 32px;
+}
+
+.Commentary-Sort {
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Sort-Commentary-Icon {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.OwnerIcon-Commentary {
+    width: 40px;
+    height: 40px;
+    border-radius: 1000px;
+    background: url('../../source/irynka.jpg');
+    background-size: 40px;
+    background-position: 0;
+    margin-right: 16px;
+    
+}
+
+.Send-Commentary{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+
+.Send-Commentary input {
+    background-color: transparent;
+    color: #AAAAAA;
+    height: 25px;
+    padding: 0 0 4px;
+    border-bottom: 1px solid #3F3F3F;
+    width: 100%;
+    margin-right: 16px;
+}
+
+.Send-Commentary input::placeholder {
+    font-size: 14px;
+    color: #AAAAAA;
+    font-weight: 400;
+}
+
+.Commentary {
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.OwnerNickname-CommentaryDate {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 3px;
+}
+
+
+.OwnerNickname {
+    color: #F1F1F1;
+    margin: 0 4px 2px 0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.CommentaryDate {
+    color: white;
+    font-size: 12px;
+    color: #AAAAAA;
+}
+
+.CommentaryText {
+    color: white;
+    font-size: 14px;
+    color: #F1F1F1;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.Commentary-Action {
+    display: flex;
+    height: 36px;
+}
+
+.Commentary-Action .CommentaryDislike .Like-Icon {
+    transform: scale(-1);
+}
+
+.CommentaryDislike {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.Commentarylike {
+    display: flex;
+    align-items: center;
+}
+
+.Commentarylike p {
+    margin-right: 12px;
+    font-size: 12px;
+    color: #AAAAAA;
+}
+
+.CommentaryReply {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 12px;
+}
